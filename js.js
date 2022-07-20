@@ -2,7 +2,8 @@ SetRange();
 
 function GoToMaxFun(){
     maxValue = document.getElementById("MaxRange").value;
-    episode = Math.floor(Math.random() * maxValue) + 1;
+    minValue = document.getElementById("MinRange").value;
+    episode = getRndInteger(minValue, maxValue);
     const settings = localStorage.getItem('saveRange');
     if(settings == 'true'){
         SaveSettings(true);
@@ -25,6 +26,10 @@ function GoToMaxFun(){
     
 
 }
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
 
 function SetRange(){
     fetch('episode.json')
