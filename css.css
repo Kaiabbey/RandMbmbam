@@ -1,0 +1,70 @@
+body{
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f8f92;
+}
+
+header{
+    border: 0;
+    margin-top: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px, 5px, 5px b);
+    width: 100vw;
+}
+
+h1{
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px black;
+}
+
+h3{
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px black;
+}
+
+.checkdiv{
+    display: flex;
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    max-width: 80vw;
+    margin: 20px;
+    height: 30px;
+    width: 130px;
+    background-color: #f4f1a6;
+    border-radius: 5px;
+    border: 0px;
+    text-shadow: 2px 2px 5px black;
+}
+
+input{
+    border-radius: 5px;
+    border: 0px;
+}
+
+.checkdiv  input{
+    width: 40px;
+    height: 40px;
+}
+
+.selector > button{
+    width: 30px;
+}
+
+.selector{
+    display: flex;
+    margin: 10px;
+}

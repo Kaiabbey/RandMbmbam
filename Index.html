@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Random MBMBaM</h1>
+    </header>
+    <button onclick="GoToMaxFun()">
+        Go!
+    </button>
+    <div class="selector" id="EpisodeMin">
+        <button onclick="MinusMinRange()">-</button>
+        <input type="number" id="MinRange" value="1">
+        <button onclick="PlusMinRange()">+</button>
+    </div>
+    <div class="selector" id="EpisodeMax">
+        <button onclick="MinusMaxRange()">-</button>
+        <input type="number" id="MaxRange">
+        <button onclick="PlusMaxRange()">+</button>
+    </div>
+    <div class="checkdiv">
+        <h3>Save Range</h3>
+        <input type="checkbox" id="storeRange" onclick="SaveSettings(this.checked)">
+    </div>
+</body>
+</html>
