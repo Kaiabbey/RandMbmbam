@@ -28,7 +28,7 @@ function GoToMaxFun(){
 }
 
 function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + parseFloat(min);
+    return Math.floor(Math.random() * (max - min + 1) ) + parseFloat(min);
   }
 
 function SetRange(){
